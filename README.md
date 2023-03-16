@@ -1,22 +1,22 @@
-# World of Final Fantasy XP Auto-Grinder
+# Super Smash Bros. Ultimate Training Buddy
 
-A fork of a fork of a fork, modified to grind XP in a specific location in World of Final Fantasy, to level my character past level 60, so I can max out a few things in the game.
+A fork of a fork of a fork of a fork, modified to act as player 2 doing random moves in Super Smash Bros. Ultimate so I can train more effectively.
 
 See previous projects for some more detailed information / setup process.
 
 ---
 
-LUFA has been included as a git submodule, so cloning the repo like this:
+LUFA has been included as a submodule, so cloning the repo like this will put LUFA in the right directory:
 
 ```
-git clone --recursive git@github.com:bertrandom/snowball-thrower.git
+git clone --recursive https://github.com/MishterKirby/smash-buddy.git
 ```
 
-will put LUFA in the right directory.
-
-Now you should be ready to rock. Open a terminal window in the `snowball-thrower` directory, type `make`, and hit enter to compile. If all goes well, the printout in the terminal will let you know it finished the build! Follow the directions on flashing `Joystick.hex` onto your Teensy, which can be found page where you downloaded the Teensy Loader application.
+Now you should be ready to compile. Run `make` in the root directory, then flash the resulting `Joystick.hex` onto your Arduino.
 
 #### Thanks
+
+Thanks to https://github.com/kidGodzilla/woff-grinder for making me stumble upon this project in the first place
 
 Thanks to https://github.com/bertrandom/snowball-thrower for the updated information which modifies the original script to throw snowballs in Zelda. This C Source is much easier to start from, and has a nice object interface for creating new command sequences.
 
